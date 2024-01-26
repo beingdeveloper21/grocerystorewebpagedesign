@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST ONLINE GROCERY DELIVERY SERVICE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        #navbar {
+            position:relative;
+            display: flex;
+            background-color: lightslategray;
+            border-radius: 7px;
+            height: 65px;
+            align-items: center;
+            justify-content: center;
+            font-family: "Bree Serif", serif;
+            top: 0px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+       
+        .logoo img {
+            height: 70px;
+        }
+
+        .item {
+            display: inline-block;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            font-size: 1.5rem;
+
+        }
+
+        .item a {
+
+            display: block;
+            padding: 5px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .item a:hover {
+            cursor: pointer;
+            font-size: 2rem;
+            color: black;
+        }
+
+        #content {
+            position: relative;
+            top: 0px;
+            display: flex;
+            flex-direction: column;
+            padding: 5px 20px;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            color: whitesmoke;
+        }
+
+        #content::before {
+            content: "";
+            position: absolute;
+            background: url('background.jpg') no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            padding: 25px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            padding: 10px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 5px 5px;
+            border-radius: 5px;
+            margin: 29px 9px;
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: burlywood;
+            position:relative;
+            top:20px;
+        }
+
+        
+
+        .btn:hover {
+            cursor: pointer;
+        }
+
+        #services {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            width: 350px;
+            position: relative;
+            bottom: 50px;
+            height: 250px;
+            border: 3px solid black;
+            margin: 40px 15px;
+            padding: 5px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        .box img {
+            height: 170px;
+            width: 230px;
+            display: block;
+            margin: auto;
+            opacity: 1.5;
+            border-radius: 5px;
+        }
+
+        #client {
+            position: relative;
+            top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #clients {
+            position: relative;
+            bottom: 50px;
+        }
+
+        #clients::before {
+            content: "";
+            position: absolute;
+            background: url('connect.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 300px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        footer {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            height: 40px;
+        }
+
+        .contact {
+            height: 400px;
+            width: 100%;
+            position: relative;
+            bottom: 80px;
+        }
+
+        .contact::before {
+            content: "";
+            position: absolute;
+            background: url('bg.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 400px;
+            z-index: -1;
+            opacity: 2;
+        }
+
+        #contactbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+
+        }
+
+        #contactbox input,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #client img {
+            position: relative;
+            bottom: 50px;
+            height:130px;
+        }
+
+        .botn {
+            background-color: bisque;
+            color: black;
+            padding: 5px 5px;
+            border-radius: 5px;
+            margin: 29px 9px;
+            font-size: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 30px;
+ }
+ .headng{
+    color:black;
+ }
+ @media (max-width:1170px){
+    #navbar{
+        flex-direction:column;
+        height:110px;
+        width:100%;
+    }
+    h1{
+        font-size:35px;
+    }
+    
+    .bar{
+        position:relative;
+        top:3px;
+        font-size: 12px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .logoo img{
+        height:80px;
+        position:relative;
+        top:20px;
+    }
+    #navbar ul li a{
+        font-size:1rem;
+        padding:20px;
+        color:black;
+    }
+    .bar{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #services{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #content{
+        height: 200x;
+        padding:3px 10px;
+        overflow:auto;
+        width:100%;
+    }
+    #content::before{
+        height:480px;
+
+    }
+    #content p{
+        font-size:25px;
+        text-align:center;
+    }
+    .primehead{
+        font-size: 26px;
+    }
+   
+    #clients{
+        flex-wrap: wrap;
+       }
+    #clients img{
+        height:auto;
+        width:300px;
+        padding:10px;
+        margin:5px;
+       }
+       #contactbox form{
+        width:50%;
+       }
+
+    }
+    @media (max-width:500px){
+        #navbar{
+            height:200px;
+        }
+        #navbar ul{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        }
+        #navbar li{
+            list-style-type: circle;
+        }
+        #navbar ul li a{
+            padding:4px;
+        }
+        .logoo img{
+        height:60px;
+        position:relative;
+        top:2px;
+
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logoo">
+            <img src="first.png" alt="GroceryGuy.com">
+        </div>
+        <div class="bar">
+        <ul>
+            <li class="item"><a href="#content">Home</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#contactbox">Contact Us</a></li>
+            <li class="item"><a href="#clients">About Us</a></li>
+        </ul>
+    </div>
+       
+
+
+    </nav>
+    <section id="content">
+        <h1 class="primehead">Welcome to Grocery Guy Store</h1>
+        <p>We offer a wide range of food products for all your everyday needs and even offer grocery home delivery as well as Buy Grocery Online for you to purchase from.</p>
+        <p>GroceryGuy is a grocery supermarket operating in Bhubaneswar with online home delivery.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="service">
+        <h1>OUR SERVICES</h1>
+        <div id="services">
+            <div class="box">
+                <h2> Farm Fresh</h2>
+                <img src="card2.jpg" alt="">
+            </div>
+            <div class="box">
+                <h2>Dairy Products </h2>
+                <img src="2dai.jpg" alt="">
+            </div>
+            <div class="box">
+                <h2>Daily Use</h2>
+                <img src="every.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1 class="headng">Skip the Chaos</h1>
+        <div id="contactbox">
+            <form action="">
+                <div class="form-box">
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-box">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="name" id="email" placeholder="Enter your e-mail">
+                </div>
+                <div class="form-box">
+                    <label for="mobile">Mobile No:</label>
+                    <input type="text" name="name" id="mobile" placeholder="Enter your mobile no.">
+                </div>
+                <div class="form-box">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="clients">
+        <h1> Visit Us On</h1>
+        <div id="client">
+            <img src="media.png" alt="">
+    </section>
+    <footer>
+        Copyright &copy; www.GroceryGuy.com All Rights Reserved!
+    </footer>
+</body>
+
+</html>
